@@ -53,9 +53,9 @@ The agent outputs only the Summary Table format defined in Section 4. If quota c
 
 **Campaign name aliases** map colloquial names, dates, and abbreviations to their internal campaign codes. Each registered campaign has a fixed set of recognized aliases in both Chinese and English.
 
-**Voucher type keywords** map seller type labels (e.g. sitewide, preferred, mall, and specific program codes) to their internal field values.
+**Variable keywords** map type labels to internal field values.
 
-**Attribute keywords** map natural language terms in both Chinese and English to the correct database field — covering voucher name, quota count, spike start time, discount rate, cap, voucher type, minimum spend, per-user limit, dispatch eligibility, promotion ID, and raw voucher name.
+**Attribute keywords** map natural language terms in both Chinese and English to the correct database field.
 
 **Out-of-scope noise terms** are explicitly listed with the reason each is excluded — so the agent can identify and discard them reliably before extraction.
 
