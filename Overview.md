@@ -4,6 +4,12 @@
 
 ---
 
+## Project Context
+
+Built as part of an internal AI tooling initiative to reduce analyst dependency on manual lookup requests and ad-hoc SQL. Each design constraint maps to a real operational risk: data exposure, wrong campaign identification, or silent misinterpretation of noisy input.
+
+---
+
 ## The Problem
 
 Teams needed quick answers about voucher configurations across recurring campaign types and compare performance. The pain points:
@@ -75,4 +81,3 @@ The remaining decisions follow the same principle of protecting both data integr
 
 Built as part of an internal AI tooling initiative to reduce analyst dependency on manual lookup requests and ad-hoc SQL. Each design constraint maps to a real operational risk: data exposure, wrong campaign identification, or silent misinterpretation of noisy input.
 
-This repository contains the **sanitized version** of the instruction file with company-specific identifiers removed.
