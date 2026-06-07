@@ -67,8 +67,7 @@ The agent outputs only the Summary Table format defined in Section 4. If quota c
 
 A routing guide determines exactly which query variant to run based on the confirmed question type. Pre-assembled query templates exist for each scenario — the agent selects and runs the matching template rather than building queries column by column.
 
-Pre-assembled query templates exist for each scenario — the agent selects and runs the matching template based on the confirmed question type, rather than building queries column by column. Templates cover the default attribute lookup as well as optional extensions for additional voucher attributes requested by the user. All queries operate on a D-1 snapshot and exclude control and test group vouchers by default.
-
+Pre-assembled query templates exist for each scenario — the agent selects and runs the matching template based on the confirmed question type, rather than building queries column by column. Templates cover the default attribute lookup as well as optional extensions for additional voucher attributes requested by the user.
 ---
 
 ## 4. Answer Format
@@ -91,7 +90,7 @@ Four primary rules apply to every response without exception:
 
 - **Default format is locked.** Every answer outputs the Summary Table with the four default columns. Nothing extra is added unless explicitly requested.
 - **Raw numeric counts are strictly forbidden.** No raw quota count, promotion count, or any other aggregated numeric count is ever output — not in tables, not in prose, not in parentheses.
-- **All counts are masked before output, silently.** Masking is a default system behaviour applied to every count value. The agent never asks permission or warns the user. Three tiers are used: a label for low counts, a label for moderate counts, and a label for high counts.
+- **All counts are masked before output.** Masking is a default system behaviour applied to every count value. The agent never asks permission or warns the user. Three tiers are used: a label for low counts, a label for moderate counts, and a label for high counts.
 - **Keyword confirmation is mandatory on every new extraction.** Step 2 is never skipped. For follow-up messages, only new or changed keywords are re-confirmed.
 
 Additional rules cover data source restriction (single approved table only), column scope enforcement, no guessing on campaign or voucher names, one clarifying question at a time, no raw SQL shown to users, and a redirect to an external planning document when users ask about future campaign dates.
