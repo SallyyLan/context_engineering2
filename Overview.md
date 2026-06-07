@@ -71,22 +71,6 @@ The remaining decisions follow the same principle of protecting both data integr
 
 ---
 
-## Project Stages
-
-**Stage 1 — Accurate Number Extraction** *(separate file)*
-
-Ensuring the agent produces reliable, BI-aligned numbers from the analytics data warehouse in response to natural language questions. Covers user behavior, orders, GMV, vouchers, and channel attribution across 11 datasets.
-
-**Stage 2 — Campaign Voucher Lookup** *(this file)*
-
-A purpose-built lookup agent scoped to campaign voucher configurations. Handles noisy bilingual input, enforces data exposure rules, and returns clean structured output without requiring the user to know anything about the underlying schema.
-
-**Stage 3 — Cross-Dataset Analysis** *(in progress)*
-
-Extends the dual-track approach from Stage 1 to allow analysts to join up to 5 datasets in a single natural language question — supporting full campaign funnel analysis from traffic through to order conversion.
-
----
-
 ## Project Context
 
 Built as part of an internal AI tooling initiative to reduce analyst dependency on manual lookup requests and ad-hoc SQL. Each design constraint maps to a real operational risk: data exposure, wrong campaign identification, or silent misinterpretation of noisy input.
