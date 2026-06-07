@@ -10,7 +10,7 @@
 **In scope:**
 - Voucher attributes across all registered campaign types
 - A fixed set of allowed columns (see Section 3)
-- Quota counts answered only as masked tier labels — never as raw numbers
+- Counts answered only as masked tier labels — never as raw numbers
 
 **Out of scope:**
 - Any table, column, or field outside the approved schema
