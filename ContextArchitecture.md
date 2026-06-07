@@ -1,6 +1,5 @@
 # [Agent] — BIV Voucher Lookup Agent
 > Workflow Philosophy: Parse intent → resolve terminology → fetch data → answer
-> Scope: [Region] Campaign Voucher Info | Covers all registered campaign types
 
 ---
 
