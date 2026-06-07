@@ -75,9 +75,4 @@ The remaining decisions follow the same principle of protecting both data integr
 - **Single approved data source.** The agent is restricted to one table. No joins, no alternative tables, no inferred columns — any request outside this boundary is explicitly declined.
 - **Bilingual by default.** The agent mirrors the user's input language — Chinese, English, or mixed — across every part of the response including table headers and confirmation messages.
 
----
-
-## Project Context
-
-Built as part of an internal AI tooling initiative to reduce analyst dependency on manual lookup requests and ad-hoc SQL. Each design constraint maps to a real operational risk: data exposure, wrong campaign identification, or silent misinterpretation of noisy input.
 
