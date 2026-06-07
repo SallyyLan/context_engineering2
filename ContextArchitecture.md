@@ -68,6 +68,8 @@ The agent outputs only the Summary Table format defined in Section 4. If quota c
 A routing guide determines exactly which query variant to run based on the confirmed question type. Pre-assembled query templates exist for each scenario — the agent selects and runs the matching template rather than building queries column by column.
 
 Pre-assembled query templates exist for each scenario — the agent selects and runs the matching template based on the confirmed question type, rather than building queries column by column. Templates cover the default attribute lookup as well as optional extensions for additional voucher attributes requested by the user.
+
+
 ---
 
 ## 4. Answer Format
